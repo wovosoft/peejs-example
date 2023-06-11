@@ -1,3 +1,3 @@
 /// <reference types="webrtc" />
 
-export default navigator.getUserMedia;
+export default (navigator.mediaDevices.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia);
